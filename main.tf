@@ -7,7 +7,7 @@ terraform {
   }
 }
 
-#
+####
 provider "aws" {
   version = "~> 2.0"
   region  = "us-east-1"
@@ -55,6 +55,7 @@ resource "aws_security_group" "default" {
     cidr_blocks = ["0.0.0.0/0"]
   }
   
+###
   
   egress {
     from_port       = 0
